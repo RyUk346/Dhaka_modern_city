@@ -98,101 +98,108 @@ export default function VideoSlider() {
           ))}
         </div>
       </div>
-      <div className="mt-12 md:flex justify-center items-center gap-12">
-        <div className="max-w-[685px] bg-[#F9F9F9] flex rounded-[16px] p-4">
-          <div className="flex">
-            <div className="max-w-[380px] space-y-4 ">
-              <h1 className="font-medium text-[26px] max-w-[232px]">
-                Looking for the new home?
-              </h1>
-              <h1>
-                10 new offers every day. 350 offers on site, trusted by a
-                community of thousands of users.
-              </h1>
-              <button className="w-[162px] h-[54px] bg-[#1F4B43] rounded-xl text-white flex justify-center items-center gap-4">
-                Get Started{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width={24}
-                  height={24}
-                  color={"#ffffff"}
-                  fill={"none"}
-                >
-                  <path
-                    d="M20.0001 18L20.0001 6"
-                    stroke="#ffffff"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                  ></path>
-                  <path
-                    d="M16.0001 11.9995L4.00012 11.9995"
-                    stroke="#ffffff"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  ></path>
-                  <path
-                    d="M12.0002 8C12.0002 8 16.0001 10.946 16.0001 12C16.0001 13.0541 12.0001 16 12.0001 16"
-                    stroke="#ffffff"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  ></path>
-                </svg>
-              </button>
-            </div>
-            <div className="relative flex items-end h-full">
-              <img src="/home.png" alt="" className="w-[130px] h-[131px]" />
-            </div>
+      <div className="mt-12 flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 px-4">
+        {/* First Card */}
+        <div className="w-full md:max-w-[685px] bg-[#F9F9F9] flex flex-col sm:flex-row justify-between rounded-[16px] p-6">
+          <div className="sm:max-w-[380px] space-y-4 mb-4 sm:mb-0">
+            <h1 className="font-medium text-[22px] sm:text-[26px] leading-snug">
+              Looking for the new home?
+            </h1>
+            <p className="text-sm sm:text-base">
+              10 new offers every day. 350 offers on site, trusted by a
+              community of thousands of users.
+            </p>
+            <button className="w-[162px] h-[54px] bg-[#1F4B43] rounded-xl text-white flex justify-center items-center gap-4">
+              Get Started
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width={24}
+                height={24}
+                color={"#ffffff"}
+                fill={"none"}
+              >
+                <path
+                  d="M20.0001 18L20.0001 6"
+                  stroke="#ffffff"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                ></path>
+                <path
+                  d="M16.0001 11.9995L4.00012 11.9995"
+                  stroke="#ffffff"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+                <path
+                  d="M12.0002 8C12.0002 8 16.0001 10.946 16.0001 12C16.0001 13.0541 12.0001 16 12.0001 16"
+                  stroke="#ffffff"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div className="flex justify-center sm:justify-end items-end">
+            <img
+              src="/home.png"
+              alt=""
+              className="w-[100px] h-[100px] sm:w-[130px] sm:h-[131px]"
+            />
           </div>
         </div>
-        <div className="max-w-[685px] flex bg-[#FFF8F6] rounded-[16px] p-4">
-          <div className="flex">
-            <div className="max-w-[380px] space-y-4 ">
-              <h1 className="font-medium text-[26px] max-w-[232px]">
-                Want to sell your home?
-              </h1>
-              <h1>
-                10 new offers every day. 350 offers on site, trusted by a
-                community of thousands of users.
-              </h1>
-              <button className="w-[162px] h-[54px] bg-[#1F4B43] rounded-xl text-white flex justify-center items-center gap-4">
-                Get Started{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width={24}
-                  height={24}
-                  color={"#ffffff"}
-                  fill={"none"}
-                >
-                  <path
-                    d="M20.0001 18L20.0001 6"
-                    stroke="#ffffff"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                  ></path>
-                  <path
-                    d="M16.0001 11.9995L4.00012 11.9995"
-                    stroke="#ffffff"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  ></path>
-                  <path
-                    d="M12.0002 8C12.0002 8 16.0001 10.946 16.0001 12C16.0001 13.0541 12.0001 16 12.0001 16"
-                    stroke="#ffffff"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  ></path>
-                </svg>
-              </button>
-            </div>
-            <div className="relative flex items-end h-full">
-              <img src="/home1.png" alt="" className="w-[130px] h-[131px]" />
-            </div>
+
+        {/* Second Card */}
+        <div className="w-full md:max-w-[685px] bg-[#FFF8F6] flex flex-col sm:flex-row justify-between rounded-[16px] p-6">
+          <div className="sm:max-w-[380px] space-y-4 mb-4 sm:mb-0">
+            <h1 className="font-medium text-[22px] sm:text-[26px] leading-snug">
+              Want to sell your home?
+            </h1>
+            <p className="text-sm sm:text-base">
+              10 new offers every day. 350 offers on site, trusted by a
+              community of thousands of users.
+            </p>
+            <button className="w-[162px] h-[54px] bg-[#1F4B43] rounded-xl text-white flex justify-center items-center gap-4">
+              Get Started
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width={24}
+                height={24}
+                color={"#ffffff"}
+                fill={"none"}
+              >
+                <path
+                  d="M20.0001 18L20.0001 6"
+                  stroke="#ffffff"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                ></path>
+                <path
+                  d="M16.0001 11.9995L4.00012 11.9995"
+                  stroke="#ffffff"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+                <path
+                  d="M12.0002 8C12.0002 8 16.0001 10.946 16.0001 12C16.0001 13.0541 12.0001 16 12.0001 16"
+                  stroke="#ffffff"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div className="flex justify-center sm:justify-end items-end">
+            <img
+              src="/home1.png"
+              alt=""
+              className="w-[100px] h-[100px] sm:w-[130px] sm:h-[131px]"
+            />
           </div>
         </div>
       </div>

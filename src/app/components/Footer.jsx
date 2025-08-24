@@ -1,71 +1,76 @@
 export default function Footer() {
   return (
     <>
-      <div className="border-t-1 border-white">
-        <div className="md:flex justify-between p-4 md:p-8 text-white bg-[#092e27]">
-          <div className="w-1/4 space-y-2">
-            <img src="/logo.png" alt="" className="w-[180px]" />
-            <h1 className="text-[18px] font-medium">
-              Bringing you closer to your dream home, one click at a time.
-            </h1>
+      <footer className="bg-[#092e27] text-white">
+        {/* Top Section */}
+        <div className="border-t border-white px-4 md:px-8 py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          {/* Logo and description */}
+          <div className="space-y-4">
+            <img
+              src="/logo.png"
+              alt="Logo"
+              className="w-[150px] md:w-[180px]"
+            />
+            <p className="text-[16px] font-medium leading-relaxed">
+              Dhaka Modern City Ltd. is proud to become one of the trusted names
+              in the real estate sector. The company is founded on a steadily
+              growing team of dedicated young and energetic professionals who
+              have years of experience in this sector.
+            </p>
           </div>
-          <div className="w-1/4 space-y-2">
-            <h1 className="text-[20px] font-bold">About</h1>
+
+          {/* About Section */}
+          <div>
+            <h2 className="text-[20px] font-bold mb-3">About</h2>
             <ul className="space-y-2">
-              <li className="font-medium text-[18px]">
-                <a href="#">Our Story</a>
+              {["Our Story", "Careers", "Our Team", "Resources"].map((item) => (
+                <li key={item} className="font-medium text-[16px]">
+                  <a href="#">{item}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h2 className="text-[20px] font-bold mb-3">Quick Links</h2>
+            <ul className="space-y-2">
+              {["About", "Contact", "FAQ", "Terms & Conditions"].map((item) => (
+                <li key={item} className="font-medium text-[16px]">
+                  <a href="#">{item}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h2 className="text-[20px] font-bold mb-3">Contact Us</h2>
+            <ul className="space-y-2">
+              <li className="font-medium text-[16px]">
+                <a href="mailto: info@dhakamoderncity.com">
+                  {" "}
+                  info@dhakamoderncity.com
+                </a>
               </li>
-              <li className="font-medium text-[18px]">
-                <a href="#">Careers</a>
-              </li>
-              <li className="font-medium text-[18px]">
-                <a href="#">Our Team</a>
-              </li>
-              <li className="font-medium text-[18px]">
-                <a href="#">Resources</a>
+              <li className="font-medium text-[16px]">
+                <a href="tel:+8802-41010303">++8802-41010303,+8801750000309</a>
               </li>
             </ul>
           </div>
-          <div className="w-1/4 space-y-2">
-            <h1 className="text-[20px] font-bold">Quick Link</h1>
+
+          {/* Address */}
+          <div>
+            <h2 className="text-[20px] font-bold mb-3">Address</h2>
             <ul className="space-y-2">
-              <li className="font-medium text-[18px]">
-                <a href="#">About </a>
-              </li>
-              <li className="font-medium text-[18px]">
-                <a href="#">Contact</a>
-              </li>
-              <li className="font-medium text-[18px]">
-                <a href="#">FAQ</a>
-              </li>
-              <li className="font-medium text-[18px]">
-                <a href="#">Terms & Conditions</a>
-              </li>
-            </ul>
-          </div>
-          <div className="w-1/4 space-y-2">
-            <h1 className="text-[20px] font-bold">Contact us</h1>
-            <ul className="space-y-2">
-              <li className="font-medium text-[18px]">
-                <a href="#">mahmudur346@gmail.com </a>
-              </li>
-              <li className="font-medium text-[18px]">
-                <a href="#">+880 167866171</a>
-              </li>
-            </ul>
-          </div>
-          <div className="w-1/4 space-y-2">
-            <h1 className="text-[20px] font-bold">Address</h1>
-            <ul className="space-y-2">
-              <li className="font-medium text-[18px]">
-                <a href="#">Road:01, House: 07, 9th floor </a>
-              </li>
-              <li className="font-medium text-[18px]">
-                <a href="#">Mirpur 2</a>
+              <li className="font-medium text-[16px]">
+                40,Tropical Noor Tower(8th Floor), Kazi Nazrul Islam Avenue,
+                Kawran Bazar Dhaka-1215,Bangladesh.
               </li>
             </ul>
           </div>
         </div>
+
         <div className="min-h-[116px] bg-[#3D3E3F] md:flex justify-between items-center px-4 md:px-12 text-white">
           <div>
             <h1 className="text-[15px]">Copyright © 2025. Badhon</h1>
@@ -173,7 +178,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-      </div>
+      </footer>
     </>
   );
 }

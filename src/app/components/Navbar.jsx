@@ -99,45 +99,52 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-md">
-      <div className="w-full flex justify-between items-center px-2 md:px-4 lg:px-6 py-4">
-        {/* Left: Logo and Desktop Nav */}
-        <div className="flex items-center space-x-6">
+      <div className="w-full flex justify-between items-center px-4 md:px-6 py-3">
+        {/* Left: Logo */}
+        <div className="flex items-center space-x-4">
           <a href="/">
-            <img src="/logo.png" className="max-w-[200px]"></img>
+            <img src="/logo.png" alt="Logo" className="w-36 md:w-52" />
           </a>
-          <nav className="hidden md:flex md:space-x-1.5 lg:space-x-6 whitespace-nowrap">
-            {navItems.map((item) => (
-              <div
-                key={item}
-                onMouseEnter={() => setHoveredItem(item)}
-                onMouseLeave={() => setHoveredItem(null)}
-              >
-                <a
-                  href="#"
-                  className="text-gray-700 hover:text-black text-2xl py-2 px-3 block"
-                >
-                  {item}
-                </a>
-              </div>
-            ))}
-          </nav>
         </div>
+
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex md:space-x-6">
+          {navItems.map((item) => (
+            <div
+              key={item}
+              onMouseEnter={() => setHoveredItem(item)}
+              onMouseLeave={() => setHoveredItem(null)}
+            >
+              <a
+                href="#"
+                className="text-gray-700 hover:text-black text-lg font-medium py-2 px-3"
+              >
+                {item}
+              </a>
+            </div>
+          ))}
+        </nav>
 
         {/* Right: Search + Icons */}
         <div className="flex items-center space-x-4 text-gray-700">
-          <div className="relative w-full max-w-sm">
+          <div className="relative">
             <input
               type="text"
               placeholder="Search..."
-              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
+              className="w-28 lg:w-60 pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
             />
+            <FaSearch className="absolute left-3 top-3 text-gray-500" />
           </div>
-          <FaSearch />
-          <FaUser />
-          <button onClick={toggleMenu} className="md:hidden text-xl">
-            {isMenuOpen ? <FaTimes /> : <FaBars />}
-          </button>
+          <FaUser className="cursor-pointer text-xl" />
         </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={toggleMenu}
+          className="md:hidden text-2xl text-gray-700"
+        >
+          {isMenuOpen ? <FaTimes /> : <FaBars />}
+        </button>
       </div>
 
       {/* Desktop Dropdown */}
@@ -188,7 +195,7 @@ export default function Header() {
       >
         <div className="w-full">
           <img
-            src="/menu.jpg"
+            src="/logo.png"
             alt="Menu Top"
             className="w-full h-auto object-cover"
           />
