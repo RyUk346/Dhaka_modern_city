@@ -74,19 +74,19 @@ export default function Cities() {
               </h1>
             </div>
             <div className="w-[90%] sm:w-[45%] md:w-[280px] flex flex-col justify-center items-center space-y-2">
-              <img src="/icon.png" alt="" className="w-[50px] h-[50px]" />
+              <img src="/agent.png" alt="" className="w-[50px] h-[50px]" />
               <h1 className="font-bold">Experienced agents</h1>
               <h1>Find an experienced agent who knows your market best</h1>
             </div>
             <div className="w-[90%] sm:w-[45%] md:w-[280px] flex flex-col justify-center items-center space-y-2">
-              <img src="/icon1.png" alt="" className="w-[50px] h-[50px]" />
+              <img src="/house.png" alt="" className="w-[50px] h-[50px]" />
               <h1 className="font-bold">Buy or rent homes</h1>
               <h1>
                 Millions of houses and apartments in your favourite cities
               </h1>
             </div>
             <div className="w-[90%] sm:w-[45%] md:w-[280px] flex flex-col justify-center items-center space-y-2">
-              <img src="/icon2.png" alt="" className="w-[50px] h-[50px]" />
+              <img src="/pc.png" alt="" className="w-[50px] h-[50px]" />
               <h1 className="font-bold">List your own property</h1>
               <h1>Sign up now and sell or rent your own properties</h1>
             </div>
