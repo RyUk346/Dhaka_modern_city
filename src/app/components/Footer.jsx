@@ -71,7 +71,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="min-h-[116px] bg-[#3D3E3F] flex flex-col space-y-2 justify-center md:justify-between items-center px-4 md:px-12 text-white">
+        <div className="min-h-[116px] bg-[#3D3E3F] flex flex-col space-y-2 md:flex-row justify-center md:justify-between items-center px-4 md:px-12 text-white">
           <div>
             <h1 className="text-[15px]">Copyright © 2025. Badhon</h1>
           </div>
