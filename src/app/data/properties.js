@@ -2,8 +2,8 @@ export const properties = [
   {
     id: 1,
     name: "Luxury Villa",
-    price: "$1,200,000",
-    address: "123 Palm Street, Miami",
+    price: "৳1,200,00000",
+    address: "123 Palm Street, Gulshan",
     bed: 4,
     bath: 3,
     sqft: 3500,
@@ -13,8 +13,8 @@ export const properties = [
   {
     id: 2,
     name: "Modern Apartment",
-    price: "$2,500/mo",
-    address: "456 Elm Street, New York",
+    price: "৳24,500/mo",
+    address: "Rupnagar, Mirpur 2",
     bed: 2,
     bath: 2,
     sqft: 1200,
@@ -24,8 +24,8 @@ export const properties = [
   {
     id: 3,
     name: "Cozy Cottage",
-    price: "$450,000",
-    address: "789 Oak Avenue, Boston",
+    price: "৳450,000",
+    address: "Nurjahan Rd, Mohammadpur",
     bed: 3,
     bath: 2,
     sqft: 2000,

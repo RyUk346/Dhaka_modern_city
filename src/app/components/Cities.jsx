@@ -1,7 +1,11 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function Cities() {
   return (
     <>
-      <div>
+      <div className="">
         {/* Section Title */}
         <div className="flex flex-col justify-center items-center mt-12 md:mt-20 px-4 text-center">
           <h1 className="text-2xl md:text-4xl font-medium">
@@ -15,44 +19,73 @@ export default function Cities() {
         {/* Cities Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-white p-4 mb-12 md:mb-20">
           {/* First Row */}
-          <div className="sm:col-span-2 h-[240px] md:h-[380px] bg-[url('/1.jpg')] bg-cover bg-center rounded-[16px]">
+          <motion.div
+            initial={{ x: "-100%", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.7, ease: "easeInOut" }}
+            className="sm:col-span-2 h-[240px] md:h-[380px] bg-[url('/1.jpg')] bg-cover bg-center rounded-[16px]"
+          >
             <div className="p-4">
               <h1 className="text-sm md:text-base">8 properties</h1>
               <h1 className="text-lg md:text-2xl font-medium">Mirpur</h1>
             </div>
-          </div>
-          <div className="h-[240px] md:h-[380px] bg-[url('/2.jpg')] bg-cover bg-center rounded-[16px]">
+          </motion.div>
+          <motion.div
+            initial={{ x: "-100%", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.7, ease: "easeInOut" }}
+            className="h-[240px] md:h-[380px] bg-[url('/2.jpg')] bg-cover bg-center rounded-[16px]"
+          >
             <div className="p-4">
               <h1 className="text-sm md:text-base">12 properties</h1>
               <h1 className="text-lg md:text-2xl font-medium">Uttara</h1>
             </div>
-          </div>
-          <div className="h-[240px] md:h-[380px] bg-[url('/3.jpg')] bg-cover bg-center rounded-[16px]">
+          </motion.div>
+          <motion.div
+            initial={{ x: "-100%", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.7, ease: "easeInOut" }}
+            className="h-[240px] md:h-[380px] bg-[url('/3.jpg')] bg-cover bg-center rounded-[16px]"
+          >
             <div className="p-4">
               <h1 className="text-sm md:text-base">20 properties</h1>
               <h1 className="text-lg md:text-2xl font-medium">Dhanmondi</h1>
             </div>
-          </div>
-
+          </motion.div>
           {/* Second Row */}
-          <div className="h-[240px] md:h-[380px] bg-[url('/4.jpg')] bg-cover bg-center rounded-[16px]">
+          <motion.div
+            initial={{ x: "-100%", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.7, ease: "easeInOut" }}
+            className="h-[240px] md:h-[380px] bg-[url('/4.jpg')] bg-cover bg-center rounded-[16px]"
+          >
             <div className="p-4">
               <h1 className="text-sm md:text-base">20 properties</h1>
               <h1 className="text-lg md:text-2xl font-medium">Banani</h1>
             </div>
-          </div>
-          <div className="h-[240px] md:h-[380px] bg-[url('/5.jpg')] bg-cover bg-center rounded-[16px]">
+          </motion.div>
+          <motion.div
+            initial={{ x: "-100%", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.7, ease: "easeInOut" }}
+            className="h-[240px] md:h-[380px] bg-[url('/5.jpg')] bg-cover bg-center rounded-[16px]"
+          >
             <div className="p-4">
               <h1 className="text-sm md:text-base">20 properties</h1>
               <h1 className="text-lg md:text-2xl font-medium">Baridhara</h1>
             </div>
-          </div>
-          <div className="sm:col-span-2 h-[240px] md:h-[380px] bg-[url('/6.jpg')] bg-cover bg-center rounded-[16px]">
+          </motion.div>
+          <motion.div
+            initial={{ x: "-100%", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.7, ease: "easeInOut" }}
+            className="sm:col-span-2 h-[240px] md:h-[380px] bg-[url('/6.jpg')] bg-cover bg-center rounded-[16px]"
+          >
             <div className="p-4">
               <h1 className="text-sm md:text-base">12 properties</h1>
               <h1 className="text-lg md:text-2xl font-medium">Gulshan</h1>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* Why Choose Us Section */}
